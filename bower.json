@@ -1,0 +1,24 @@
+{
+  "name": "gulp-demo",
+  "description": "gulp demo",
+  "main": "index.js",
+  "authors": [
+    "lixudong"
+  ],
+  "license": "Unlicense",
+  "keywords": [
+    "gulp"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "layer": "^3.0.3"
+  }
+}

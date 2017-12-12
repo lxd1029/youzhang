@@ -1,0 +1,1 @@
+function a() {    alert(1)}(function f() {    for (var i =0;i<5;i++){        alert(i)    }})();(function () {    console.log("ok")})();

@@ -1,0 +1,1 @@
+* src——开发文件夹* build——正常文件夹* dist——发布文件夹> 可以执行<code>_**gulp**_</code>命令开始任务<br>> 可以执行<code>_**gulp clean**_</code>命令进行正常文件夹与发布文件夹内容清空操作
