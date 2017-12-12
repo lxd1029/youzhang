@@ -1,1 +1,0 @@
-function p2() {    console.log("this is page 2");}
