@@ -24,6 +24,6 @@ Date.prototype.Format = function (fmt) {
 };
 //定时器，每秒更新显示时间
 setInterval(function () {
-    var time = new Date().Format("yyyy-MM-dd hh :mm:ss");
+    var time = new Date().Format("yyyy-MM-dd hh:mm:ss");
     $("#nowTime").text(time);
 },1000);
