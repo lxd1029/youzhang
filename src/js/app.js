@@ -1,6 +1,10 @@
 $("#Nav").on('click','a',function () {
     var goto=$(this).attr('goto');
-    $("#Iframe").attr('src',goto)
+    $("#Iframe").attr('src',goto);
+    if(!$(this).hasClass('active')){
+        $(this).parent().siblings('li').children().removeClass('active');
+        $(this).addClass('active')
+    }
 });
 $("#nowPage").on('click','a',function () {
     var goto=$(this).attr('goto');
@@ -27,3 +31,12 @@ setInterval(function () {
     var time = new Date().Format("yyyy-MM-dd hh:mm:ss");
     $("#nowTime").text(time);
 },1000);
+var showS=function () {
+    $("#Shade").show()
+};
+var hideS=function () {
+    setTimeout(function () {
+        $("#Shade").fadeOut()
+    },150)
+
+};

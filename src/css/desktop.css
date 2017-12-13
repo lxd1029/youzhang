@@ -12,11 +12,12 @@ html,body{
 .con{
     background-color: #fff;
     height:100%;
-    padding: 17px;
+    padding: 12px 17px 17px;
 }
 .con .header{
     border-bottom: solid #f5f5f5 1px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    line-height: 30px;
 }
 .con .header .title{
     font-size: 20px;
@@ -68,4 +69,65 @@ html,body{
 }
 .warning-tabs .panel{
     padding:0;
+}
+.revenue-tabs{
+    border:0;
+}
+.revenue-tabs .li-con{
+    margin-top: 10px;
+    border:solid #e1e1e1 1px;
+    padding:18px 20px;
+}
+.revenue-tabs .li-con li{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.revenue-tabs .li-con li div:last-child{
+    color: #2794e8;
+}
+.revenue-tabs .li-con p{
+    margin-top: 10px;
+    color: #ff9900;
+}
+.customer-analyze .analyze-con{
+    margin-top: 10px;
+    border:solid #e1e1e1 1px;
+    padding:18px 20px;
+}
+.analyze-con .li-con li{
+    padding-bottom: 15px;
+}
+.analyze-con .li-con li div:last-child{
+    color: #2794e8;
+}
+.toolbar .am-selected{
+    width:100px;
+}
+.toolbar .am-selected-btn.am-btn-default{
+    padding:5px;
+    font-size: 14px;
+    line-height: 18px;
+    position: relative;
+    top:-2px;
+}
+.toolbar .am-selected-btn.am-btn-default span{
+    width:90%;
+}
+.toolbar .am-selected-list .am-selected-text{
+    font-size: 14px;
+}
+.toolbar .am-selected-list .am-icon-check{
+    font-size: 14px;
+}
+.am-modal-bd .am-form-group+.am-form-group{
+    margin-bottom: 0;
+}
+.am-modal-bd .am-form-group label{
+    width:100%;
+}
+.am-modal-bd .am-form-group label input{
+    width:68%;
+}
+.am-modal-hd+.am-modal-bd{
+    padding-top:35px;
 }

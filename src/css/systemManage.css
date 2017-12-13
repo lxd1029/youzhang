@@ -1,0 +1,31 @@
+html,body{
+    background-color: #fff;
+}
+.wrap{
+    height:100%;
+    padding: 15px;
+}
+.customer{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.customer>thead>tr>th{
+    border-bottom: 0;
+    color: #797979;
+    background-color: #f5f5f5;
+}
+.customer label{
+    margin:0;
+    line-height: 22px;
+    min-height:0;
+}
+.customer label span{
+    line-height: 22px;
+}
+.bottom-toolbar{
+    line-height: 30px;
+}
+.bottom-toolbar div:first-child{
+    color: #797979;
+}

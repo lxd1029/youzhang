@@ -13,7 +13,19 @@
         <div class="con">
             <div class="am-cf header">
                 <div class="am-fl title">我的客户</div>
-                <div class="am-fr toolbar"></div>
+                <div class="am-fr toolbar am-cf">
+                    <div class="am-fl">
+                        <select data-am-selected>
+                            <option value="b" selected>客户名称</option>
+                            <option value="a">客户编号</option>
+                        </select>
+                    </div>
+                    <div class="am-fl am-input-group">
+                        <input type="text" placeholder="请输入搜索日期" class="am-form-field search-input">
+                    </div>
+                    <a href="javascript:;" class="am-fl my-btn">查询</a>
+                    <a href="javascript:;" class="am-fl my-btn" id="add_manage">添加</a>
+                </div>
             </div>
             <table class="my-cus am-table am-table-bordered am-text-middle">
                 <thead>
@@ -61,7 +73,7 @@
             <div class="am-cf header">
                 <div class="am-fl title">预警提醒<span class="tip">（三天内到期）</span></div>
             </div>
-            <div class="am-tabs" data-am-tabs="{noSwipe: 1}" id="doc-tab-demo-1">
+            <div class="am-tabs" data-am-tabs="{noSwipe: 1}" id="earlyWarningTabs">
                 <ul class="am-tabs-nav am-nav am-nav-tabs mytab-ul">
                     <li class="am-active"><a href="javascript: void(0)">待办事项0</a></li>
                     <li><a href="javascript: void(0)">应收提醒0</a></li>
@@ -174,13 +186,17 @@
                                 <td>商贸公司</td>
                                 <td>001</td>
                                 <td>0</td>
-                                <td>进行中</td>
+                                <td align="center">
+                                    <a href="javascript:;" class="am-btn am-btn-xs am-radius s-btn">查看</a>
+                                </td>
                             </tr>
                             <tr>
                                 <td>商贸公司</td>
                                 <td>001</td>
                                 <td>0</td>
-                                <td>进行中</td>
+                                <td align="center">
+                                    <a href="javascript:;" class="am-btn am-btn-xs am-radius s-btn">查看</a>
+                                </td>
                             </tr>
                             </tbody>
                         </table>
@@ -194,6 +210,100 @@
             <div class="am-cf header">
                 <div class="am-fl title">营收汇总</div>
             </div>
+            <div class="am-tabs" data-am-tabs="{noSwipe: 1}" id="revenueTabs">
+                <ul class="am-tabs-nav am-nav am-nav-tabs mytab-ul">
+                    <li class="am-active"><a href="javascript: void(0)">合同汇总</a></li>
+                    <li><a href="javascript: void(0)">汇款汇总</a></li>
+                    <li><a href="javascript: void(0)">欠款汇总</a></li>
+                    <li><a href="javascript: void(0)">合同剩余汇总</a></li>
+                </ul>
+                <div class="am-tabs-bd revenue-tabs">
+                    <div class="am-tab-panel am-active panel li-con">
+                        <ul>
+                            <li class="am-cf">
+                                <div class="am-fl">记账服务费：</div>
+                                <div class="am-fl">500.00元</div>
+                            </li>
+                            <li class="am-cf">
+                                <div class="am-fl">账　本　费：</div>
+                                <div class="am-fl">0.00元</div>
+                            </li>
+                            <li class="am-cf">
+                                <div class="am-fl">其　　　他：</div>
+                                <div class="am-fl">0.00元</div>
+                            </li>
+                            <li class="am-cf">
+                                <div class="am-fl">合　　　计：</div>
+                                <div class="am-fl">500.00元</div>
+                            </li>
+                        </ul>
+                        <p>所有服务中客户最新一年合同金额汇总</p>
+                    </div>
+                    <div class="am-tab-panel panel li-con">
+                        <ul>
+                            <li class="am-cf">
+                                <div class="am-fl">记账服务费：</div>
+                                <div class="am-fl">500.00元</div>
+                            </li>
+                            <li class="am-cf">
+                                <div class="am-fl">账　本　费：</div>
+                                <div class="am-fl">0.00元</div>
+                            </li>
+                            <li class="am-cf">
+                                <div class="am-fl">其　　　他：</div>
+                                <div class="am-fl">0.00元</div>
+                            </li>
+                            <li class="am-cf">
+                                <div class="am-fl">合　　　计：</div>
+                                <div class="am-fl">500.00元</div>
+                            </li>
+                        </ul>
+                        <p>本年1月1日至今日回款金额汇总</p>
+                    </div>
+                    <div class="am-tab-panel panel li-con">
+                        <ul>
+                            <li class="am-cf">
+                                <div class="am-fl">记账服务费：</div>
+                                <div class="am-fl">500.00元</div>
+                            </li>
+                            <li class="am-cf">
+                                <div class="am-fl">账　本　费：</div>
+                                <div class="am-fl">0.00元</div>
+                            </li>
+                            <li class="am-cf">
+                                <div class="am-fl">其　　　他：</div>
+                                <div class="am-fl">0.00元</div>
+                            </li>
+                            <li class="am-cf">
+                                <div class="am-fl">合　　　计：</div>
+                                <div class="am-fl">500.00元</div>
+                            </li>
+                        </ul>
+                        <p>所有历史欠款金额汇总</p>
+                    </div>
+                    <div class="am-tab-panel panel li-con">
+                        <ul>
+                            <li class="am-cf">
+                                <div class="am-fl">记账服务费：</div>
+                                <div class="am-fl">500.00元</div>
+                            </li>
+                            <li class="am-cf">
+                                <div class="am-fl">账　本　费：</div>
+                                <div class="am-fl">0.00元</div>
+                            </li>
+                            <li class="am-cf">
+                                <div class="am-fl">其　　　他：</div>
+                                <div class="am-fl">0.00元</div>
+                            </li>
+                            <li class="am-cf">
+                                <div class="am-fl">合　　　计：</div>
+                                <div class="am-fl">500.00元</div>
+                            </li>
+                        </ul>
+                        <p>执行中合同未来预期回款金额汇总(以本日为起算点)</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="customer-analyze am-u-sm-4">
@@ -201,20 +311,105 @@
             <div class="am-cf header">
                 <div class="am-fl title">客户经营分析</div>
             </div>
+            <div class="am-g analyze-con">
+                <div class="am-u-sm-4 li-con">
+                    <ul>
+                        <li class="am-cf">
+                            <div class="am-fl">现有服务合同：</div>
+                            <div class="am-fl">1</div>
+                        </li>
+                        <li class="am-cf">
+                            <div class="am-fl">本月新增：</div>
+                            <div class="am-fl">1</div>
+                        </li>
+                        <li class="am-cf">
+                            <div class="am-fl">本月净增率：</div>
+                            <div class="am-fl">0</div>
+                        </li>
+                        <li class="am-cf">
+                            <div class="am-fl">本年新增：</div>
+                            <div class="am-fl">1</div>
+                        </li>
+                        <li class="am-cf">
+                            <div class="am-fl">本年流失：</div>
+                            <div class="am-fl">0</div>
+                        </li>
+                        <li class="am-cf">
+                            <div class="am-fl">本年净增率：</div>
+                            <div class="am-fl">0</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="am-u-sm-8"></div>
+            </div>
         </div>
     </div>
     <div class="staff-analyze am-u-sm-4">
         <div class="con">
             <div class="am-cf header">
                 <div class="am-fl title">员工工作量分析(1)</div>
+                <div class="am-fr am-cf">
+                    <div class="am-fl am-input-group">
+                        <input type="text" placeholder="请输入搜索日期" class="am-form-field search-input">
+                    </div>
+                    <a href="javascript:;" class="am-fr my-btn">查询</a>
+                </div>
             </div>
+            <table class="my-cus am-table am-table-bordered am-text-middle">
+                <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>客户数</th>
+                    <th>凭证数</th>
+                    <th>分录数</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>zhangsan</td>
+                    <td>52</td>
+                    <td>9</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>jofols</td>
+                    <td>52</td>
+                    <td>9</td>
+                    <td>13</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!--添加部门模态窗口-->
+<div class="am-modal am-modal-alert" tabindex="-1" id="addManage">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd am-text-left">部门添加 <i class="am-icon-close am-fr closeA"></i></div>
+        <div class="am-modal-bd" data-am-validator>
+            <div class="am-form-group">
+                <label for="managerName">
+                    <span class="am-text-danger">*</span>部门名称：
+                    <input type="text" class="am-form-field search-input" style="display: inline-block;" id="managerName" minlength="2" placeholder="请输入部门名称" required/>
+                </label>
+            </div>
+            <div class="am-form-group">
+                <label for="managerCharge">
+                    <span class="am-text-danger">*</span>部门主管：
+                    <input type="text" class="am-form-field search-input" style="display: inline-block;" id="managerCharge" minlength="2" placeholder="请输入部门主管" required/>
+                </label>
+            </div>
+        </div>
+        <div class="am-modal-footer am-text-right">
+            <a href="javascript:;" class="am-btn am-radius my-btn-yy" style="margin-right: 20px">保存</a>
+            <a href="javascript:;" class="am-btn am-radius my-btn-yy closeA">取消</a>
         </div>
     </div>
 </div>
 
-
 <script src="../js/jquery.min.js"></script>
 <script src="../js/amazeui.min.js"></script>
+<script src="../js/public.js"></script>
 <script src="../js/page/desktop.js"></script>
 </body>
 </html>
