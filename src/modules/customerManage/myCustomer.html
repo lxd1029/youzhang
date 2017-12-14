@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../../css/amazeui.min.css">
+    <link rel="stylesheet" href="../../css/app.css">
+    <link rel="stylesheet" href="../../css/myCustomer.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="am-tabs" data-am-tabs="{noSwipe: 1}" id="earlyWarningTabs">
+        <ul class="am-tabs-nav am-nav am-nav-tabs mytab-ul">
+            <li class="am-active"><a href="javascript: void(0)">我的客户</a></li>
+            <li><a href="javascript: void(0)">我的合同</a></li>
+            <li><a href="javascript: void(0)">我的联系人</a></li>
+            <li><a href="javascript: void(0)">我的单据</a></li>
+            <li><a href="javascript: void(0)">我的收款</a></li>
+            <li><a href="javascript: void(0)">预售款管理</a></li>
+            <li><a href="javascript: void(0)">费用支出</a></li>
+        </ul>
+        <div class="am-tabs-bd warning-tabs">
+            <div class="am-tab-panel am-active panel">
+                <div class="am-cf header">
+                    <div class="am-fr">
+                        <div class="am-fl">过滤条件：</div>
+                        <div class="am-fl my-select" style="margin-right:0">
+                            <select data-am-selected>
+                                <option value="1">公司名称</option>
+                                <option value="2">创建日期</option>
+                                <option value="3">合同状态</option>
+                            </select>
+                        </div>
+                        <div class="am-fl am-input-group">
+                            <input type="text" placeholder="请输入条件" class="am-form-field search-input">
+                        </div>
+                        <div class="am-fl">客户状态：</div>
+                        <div class="am-fl my-select" style="margin-right: 15px">
+                            <select data-am-selected>
+                                <option value="1">正常</option>
+                                <option value="2">冻结</option>
+                                <option value="3">进行中</option>
+                            </select>
+                        </div>
+                        <div class="am-fl">排序：</div>
+                        <div class="am-fl my-select" style="margin-right: 15px">
+                            <select data-am-selected>
+                                <option value="1">编号升序</option>
+                                <option value="2">编号降序</option>
+                                <option value="3">日期升序</option>
+                                <option value="4">日期降序</option>
+                            </select>
+                        </div>
+                        <a href="javascript:;" class="am-fl my-btn">检索</a>
+                        <a href="javascript:;" class="am-fl my-btn">高级检索</a>
+                        <a href="javascript:;" class="am-fl my-btn">添加</a>
+                        <a href="javascript:;" class="am-fl my-btn">修改</a>
+                        <a href="javascript:;" class="am-fl my-btn">删除</a>
+                        <a href="javascript:;" class="am-fl my-btn">取消待办</a>
+                        <a href="javascript:;" class="am-fl my-btn">导出</a>
+                    </div>
+                </div>
+                <div class="my-cus">
+                    <table class="am-table am-table-bordered am-text-middle am-table-compact customer">
+                        <thead>
+                        <tr>
+                            <th width="130">
+                                <label class="am-checkbox">
+                                    <input type="checkbox" checked="checked" value="" data-am-ucheck checked>
+                                    序号
+                                </label>
+                            </th>
+                            <th>公司名称</th>
+                            <th>创建日期</th>
+                            <th>合同状态</th>
+                            <th>欠款金额</th>
+                            <th>合同剩余金额</th>
+                            <th>待办事项</th>
+                            <th>资料完整度</th>
+                            <th>备注</th>
+                            <th width="211">操作</th>
+                            <th class="search-th" width="240">完工状态
+                                <button type="button" class="am-btn am-btn-xs am-fr">查看</button>
+                                <div class="am-fr am-input-group">
+                                    <input type="text" placeholder="请输入时间" class="am-form-field search-input">
+                                </div>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <label class="am-checkbox">
+                                    <input type="checkbox" checked="checked" value="" data-am-ucheck checked>
+                                    01
+                                </label>
+                            </td>
+                            <td>001</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <button class="am-btn am-btn-xs am-radius s-btn">记账</button>
+                                <button class="am-btn am-btn-xs am-radius s-btn">删除账套</button>
+                                <button class="am-btn am-btn-xs am-radius s-btn">收款</button>
+                            </td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="am-checkbox">
+                                    <input type="checkbox" checked="checked" value="" data-am-ucheck checked>
+                                    01
+                                </label>
+                            </td>
+                            <td>001</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="am-cf bottom-bar">
+                    <div class="am-fr am-cf">
+                        <div class="am-fl subtotal">当页小计：</div>
+                        <div class="am-fl">欠款金额：</div>
+                        <div class="am-fl" style="margin-right:10px;">500.00</div>
+                        <div class="am-fl">合同剩余金额：</div>
+                        <div class="am-fl">0</div>
+                    </div>
+                </div>
+                <div class="am-cf bottom-bar">
+                    <div class="am-fr am-cf">
+                        <div class="am-fl subtotal">总计：</div>
+                        <div class="am-fl">欠款金额：</div>
+                        <div class="am-fl" style="margin-right:10px;">500.00</div>
+                        <div class="am-fl">合同剩余金额：</div>
+                        <div class="am-fl">0</div>
+                    </div>
+                </div>
+                <div class="am-cf bottom-toolbar">
+                    <div class="am-fl">当前第1页/共1页 共4条记录</div>
+                    <div class="am-fr">
+                        <a href="javascript:;" class="my-btn-n">首页</a>
+                        <a href="javascript:;" class="my-btn-n">上一页</a>
+                        <a href="javascript:;" class="my-btn-n">1</a>
+                        <a href="javascript:;" class="my-btn-n">下一页</a>
+                        <a href="javascript:;" class="my-btn-n">尾页</a>
+                    </div>
+                </div>
+            </div>
+            <div class="am-tab-panel panel">
+                <table class="my-cus am-table am-table-bordered am-text-middle">
+                    <thead>
+                    <tr>
+                        <th>客户名称</th>
+                        <th>收款日期</th>
+                        <th>收款金额</th>
+                        <th>首款类型</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>商贸公司</td>
+                        <td>001</td>
+                        <td>0</td>
+                        <td>进行中</td>
+                    </tr>
+                    <tr>
+                        <td>商贸公司</td>
+                        <td>001</td>
+                        <td>0</td>
+                        <td>进行中</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="am-tab-panel panel">
+                <table class="my-cus am-table am-table-bordered am-text-middle">
+                    <thead>
+                    <tr>
+                        <th>到期合同</th>
+                        <th>合同编号</th>
+                        <th>到期时间</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>商贸公司</td>
+                        <td>001</td>
+                        <td>进行中</td>
+                    </tr>
+                    <tr>
+                        <td>商贸公司</td>
+                        <td>001</td>
+                        <td>进行中</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="am-tab-panel panel">
+                <table class="my-cus am-table am-table-bordered am-text-middle">
+                    <thead>
+                    <tr>
+                        <th>报税期间</th>
+                        <th>未报数量</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>商贸公司</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>商贸公司</td>
+                        <td>001</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="am-tab-panel panel">
+                <table class="my-cus am-table am-table-bordered am-text-middle">
+                    <thead>
+                    <tr>
+                        <th>类型</th>
+                        <th>主题</th>
+                        <th>时间</th>
+                        <th>状态</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>商贸公司</td>
+                        <td>001</td>
+                        <td>0</td>
+                        <td align="center">
+                            <a href="javascript:;" class="am-btn am-btn-xs am-radius s-btn">查看</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>商贸公司</td>
+                        <td>001</td>
+                        <td>0</td>
+                        <td align="center">
+                            <a href="javascript:;" class="am-btn am-btn-xs am-radius s-btn">查看</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/amazeui.min.js"></script>
+<script src="../../js/page/myCustomer.js"></script>
+</body>
+</html>

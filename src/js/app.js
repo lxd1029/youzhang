@@ -1,6 +1,9 @@
 $("#Nav").on('click','a',function () {
     var goto=$(this).attr('goto');
+    var name=$(this).text();
     $("#Iframe").attr('src',goto);
+    $("#cRouter").attr('goto',goto);
+    $("#cRouter").text(name);
     if(!$(this).hasClass('active')){
         $(this).parent().siblings('li').children().removeClass('active');
         $(this).addClass('active')
@@ -8,6 +11,9 @@ $("#Nav").on('click','a',function () {
 });
 $("#nowPage").on('click','a',function () {
     var goto=$(this).attr('goto');
+    if(goto==''){
+        return;
+    }
     $("#Iframe").attr('src',goto)
 });
 //拓展日期时间函数
@@ -35,8 +41,5 @@ var showS=function () {
     $("#Shade").show()
 };
 var hideS=function () {
-    setTimeout(function () {
-        $("#Shade").fadeOut()
-    },150)
-
+    $("#Shade").fadeOut()
 };
