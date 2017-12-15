@@ -15,10 +15,8 @@ $(window).resize(function (a, b) {
         "height":h
     });
 });
-$("#add_manage").click(function () {
-    modalOpen("#addManage")
-    window.parent.showS();
-})
+
+
 var myChart = echarts.init(document.getElementById('analyzeWindow'));
 var option = {
     tooltip : {

@@ -1,0 +1,1 @@
+myModal("#add_manage","#addManage");

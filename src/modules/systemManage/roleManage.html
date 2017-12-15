@@ -23,7 +23,7 @@
             <a href="javascript:;" class="am-fl my-btn">导出</a>
         </div>
     </div>
-    <table class="my-cus am-table am-table-bordered am-text-middle am-table-compact customer">
+    <table class="my-cus am-table am-table-bordered am-text-middle am-table-compact customer MyTable" id="roleTable">
         <thead>
         <tr>
             <th width="130">
@@ -37,6 +37,16 @@
         </tr>
         </thead>
         <tbody>
+        <tr>
+            <td>
+                <label class="am-checkbox">
+                    <input type="checkbox" checked="checked" value="" data-am-ucheck checked>
+                    01
+                </label>
+            </td>
+            <td>001</td>
+            <td>0</td>
+        </tr>
         <tr>
             <td>
                 <label class="am-checkbox">
@@ -74,6 +84,7 @@
 
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/amazeui.min.js"></script>
+<script src="../../js/public.js"></script>
 <script src="../../js/page/roleManage.js"></script>
 </body>
 </html>

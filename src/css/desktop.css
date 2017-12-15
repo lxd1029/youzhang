@@ -119,15 +119,3 @@ html,body{
 .toolbar .am-selected-list .am-icon-check{
     font-size: 14px;
 }
-.am-modal-bd .am-form-group+.am-form-group{
-    margin-bottom: 0;
-}
-.am-modal-bd .am-form-group label{
-    width:100%;
-}
-.am-modal-bd .am-form-group label input{
-    width:68%;
-}
-.am-modal-hd+.am-modal-bd{
-    padding-top:35px;
-}
