@@ -6,24 +6,19 @@
     <link rel="stylesheet" href="../../css/amazeui.min.css">
     <link rel="stylesheet" href="../../css/app.css">
     <link rel="stylesheet" href="../../css/roleManage.css">
+    <script src="../../js/page/userManage.js"></script>
 </head>
 <body>
 <div class="wrap">
     <div class="am-cf header">
-        <div class="am-fl title">角色管理</div>
+        <div class="am-fl title">资料参数</div>
         <div class="am-fr toolbar am-cf">
-            <div class="am-fl">合同编号：</div>
-            <div class="am-fl am-input-group">
-                <input type="text" placeholder="请输入合同编号" class="am-form-field search-input">
-            </div>
-            <a href="javascript:;" class="am-fl my-btn">查询</a>
             <a href="javascript:;" class="am-fl my-btn">添加</a>
-            <a href="javascript:;" class="am-fl my-btn">修改</a>
+            <a href="javascript:;" class="am-fl my-btn">调账</a>
             <a href="javascript:;" class="am-fl my-btn">删除</a>
-            <a href="javascript:;" class="am-fl my-btn">导出</a>
         </div>
     </div>
-    <table class="my-cus am-table am-table-bordered am-text-middle am-table-compact customer MyTable" id="roleTable">
+    <table class="my-cus am-table am-table-bordered am-text-middle am-table-compact customer MyTable">
         <thead>
         <tr>
             <th width="130">
@@ -32,21 +27,11 @@
                     序号
                 </label>
             </th>
-            <th>部门名称</th>
-            <th>部门主管</th>
+            <th>物品名称</th>
+            <th>单位</th>
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>
-                <label class="am-checkbox">
-                    <input type="checkbox" checked="checked" value="" data-am-ucheck checked>
-                    01
-                </label>
-            </td>
-            <td>001</td>
-            <td>0</td>
-        </tr>
         <tr>
             <td>
                 <label class="am-checkbox">
@@ -85,6 +70,6 @@
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/amazeui.min.js"></script>
 <script src="../../js/public.js"></script>
-<script src="../../js/page/roleManage.js"></script>
+<script src="../../js/page/todoList.js"></script>
 </body>
 </html>

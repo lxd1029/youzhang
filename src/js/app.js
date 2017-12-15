@@ -1,12 +1,41 @@
 $("#Nav").on('click','a',function () {
+    if($(this).parent().children().length>1){
+        if($(this).siblings().css('display')=='none'){
+            $(this).siblings().slideDown();
+            $(this).parent().siblings().children('a').removeClass('active');
+            $(this).addClass('active');
+            $(this).parent().siblings().children('ul').slideUp();
+        }else{
+            $(this).siblings().slideUp();
+        }
+        return;
+    }
     var goto=$(this).attr('goto');
     var name=$(this).text();
     $("#Iframe").attr('src',goto);
     $("#cRouter").attr('goto',goto);
     $("#cRouter").text(name);
+    $("#pRouter").text(name);
     if(!$(this).hasClass('active')){
         $(this).parent().siblings('li').children().removeClass('active');
         $(this).addClass('active')
+        $(this).parent('li').siblings().find('li').removeClass('active');
+        $(this).parent().siblings().children('ul').slideUp();
+    }
+});
+$("#Nav").on('click','li ul li',function () {
+    var goto=$(this).attr('goto');
+    var name=$(this).text();
+    var pname=$(this).parent().siblings('a').text();
+    if(!goto){return;}
+    $("#Iframe").attr('src',goto);
+    $("#cRouter").attr('goto',goto);
+    $("#cRouter").text(name);
+    $("#pRouter").text(pname);
+    if(!$(this).hasClass('active')){
+        $(this).siblings('li').removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').siblings().find('li').removeClass('active');
     }
 });
 $("#nowPage").on('click','a',function () {
