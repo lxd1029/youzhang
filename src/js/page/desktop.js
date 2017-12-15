@@ -16,7 +16,7 @@ $(window).resize(function (a, b) {
     });
 });
 
-
+myModal("#department_info","#departmentInfo")
 var myChart = echarts.init(document.getElementById('analyzeWindow'));
 var option = {
     tooltip : {

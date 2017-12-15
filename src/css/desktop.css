@@ -119,3 +119,31 @@ html,body{
 .toolbar .am-selected-list .am-icon-check{
     font-size: 14px;
 }
+/* 模态窗 */
+.am-modal-dialog{
+    width: 1020px;
+}
+.am-modal-bd{
+    background-color: #fff;
+    padding: 30px 35px 45px;
+}
+.am-modal-bd>ul>li{
+    padding: 15px 0;
+}
+.am-modal-bd li>div:first-child{line-height: 45px;font-size: 14px}
+.am-modal-bd li>div:last-child{
+    width: 350px;
+}
+.am-modal-bd li>div:last-child input{
+    width: 100%;
+    height: 45px;
+    margin: 0;
+}
+.my-select .am-selected-btn.am-btn-default{
+    height: 45px;
+    top: 0;
+}
+.am-modal-hd+.am-modal-bd{
+    padding-top:35px;
+}
+/* 模态窗 */
