@@ -11,7 +11,11 @@
 <body>
 <div class="wrap">
     <div class="am-cf am-text-center header">
-        <button type="button" class="am-fl am-btn am-btn-xs my-btn-yy">选择文件</button>
+        <div class="am-form-group am-form-file am-fl">
+            <button type="button" class="am-fl am-btn am-btn-xs my-btn-yy">
+                选择文件</button>
+            <input id="doc-form-file" type="file" multiple>
+        </div>
         <span>提示：数据导入，请按照提供的正确的格式导入 <a href="javascript:;">下载</a></span>
         <div class="am-fr toolbar am-cf">
             <a href="javascript:;" class="am-fl my-btn">保存</a>
