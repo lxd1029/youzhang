@@ -22,7 +22,7 @@
     </style>
 </head>
 <body>
-<div class="wrap">
+<div class="wrap" id="deWrap">
     <div class="am-cf header">
         <div class="am-fl title">部门管理</div>
         <div class="am-fr toolbar am-cf">
@@ -51,26 +51,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>
-                <label class="am-checkbox">
-                    <input type="checkbox" checked="checked" value="" data-am-ucheck checked>
-                    01
-                </label>
-            </td>
-            <td>001</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>
-                <label class="am-checkbox">
-                    <input type="checkbox" checked="checked" value="" data-am-ucheck checked>
-                    01
-                </label>
-            </td>
-            <td>001</td>
-            <td>0</td>
-        </tr>
+        <tr is="dep-table" v-for="td in data" v-bind="td"></tr>
         </tbody>
     </table>
     <div class="am-cf bottom-toolbar">
@@ -110,8 +91,10 @@
 </div>
 
 <script src="../../js/jquery.min.js"></script>
+<script src="../../js/vue.js"></script>
 <script src="../../js/amazeui.min.js"></script>
 <script src="../../js/public.js"></script>
+<script src="../../js/component.js"></script>
 <script src="../../js/page/departmentManage.js"></script>
 </body>
 </html>

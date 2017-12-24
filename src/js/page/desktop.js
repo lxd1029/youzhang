@@ -78,3 +78,55 @@ var option = {
     ]
 };
 myChart.setOption(option);
+var customer=new Vue({
+    el:"#customer",
+    data:{
+        cusData:[
+            {
+                name:"商贸公司",
+                num:"01",
+                backlog:"1",
+                state:"正常",
+                debt:"200",
+                surplus:"6000"
+            },{
+                name:"商贸公司1",
+                num:"02",
+                backlog:"3",
+                state:"正常",
+                debt:"2400",
+                surplus:"61000"
+            }
+        ]
+    }
+})
+var warning=new Vue({
+    el:"#WarningTabs",
+    data:{
+        one:[
+            {name:"商贸公司事项1",num:"2"},
+            {name:"商贸公司事项2",num:"3"}
+        ],
+        two:[
+            {name:"公司名称1",date:"2017-12-23",money:"100",type:"已收款"},
+            {name:"公司名称2",date:"2017-12-24",money:"300",type:"已收款"},
+            {name:"公司名称3",date:"2017-12-25",money:"400",type:"已收款"},
+            {name:"公司名称4",date:"2017-12-26",money:"500",type:"已收款"}
+        ],
+        three:[
+            {name:"合同名称1",num:"201236251364",date:"2017-12-31"},
+            {name:"合同名称2",num:"201236251364",date:"2017-12-21"},
+            {name:"合同名称3",num:"201236251343",date:"2017-12-11"}
+        ],
+        four:[
+            {date:"报税期间",num:'1'},
+            {date:"报税期间1",num:'2'},
+            {date:"报税期间2",num:'3'}
+        ],
+        five:[
+            {type:'类型1',thems:"主题1",date:"2017-12-15",state:"1"},
+            {type:'类型2',thems:"主题2",date:"2017-12-14",state:"2"},
+            {type:'类型3',thems:"主题3",date:"2017-12-17",state:"3"}
+        ]
+    }
+})
