@@ -21,7 +21,7 @@ html,body{
 }
 .con .header .title{
     font-size: 20px;
-    color: #2794e8;
+    color: #16518d;
 }
 .con .header .title .tip{
     color: #797979;
@@ -43,11 +43,11 @@ html,body{
     font-size: 14px;
     padding:3px 12px;
     color: #fff;
-    background-color: #2794e8;
+    background-color: #16518d;
 }
 .my-cus tbody tr td button.btn-a{
     border:none;
-    color: #2794e8;
+    color: #16518d;
     background-color: transparent;
     font-size: 16px;
     padding:5px 10px;
@@ -62,19 +62,19 @@ html,body{
     margin-top: 9px;
     font-size: 14px;
     color: #fff;
-    border-bottom: solid 1px #2794e8;
+    border-bottom: solid 1px #16518d;
 }
 .mytab-ul>li>a,.mytab-ul>li>a:hover,.mytab-ul>li>a:hover{
     height: 30px;
     line-height: 18px;
-    color: #2794e8;
+    color: #16518d;
     background-color: #fff;
     border-color:transparent;
-    border-bottom-color: #2794e8 !important;
+    border-bottom-color: #16518d !important;
 }
 .mytab-ul>li.am-active>a,.mytab-ul>li.am-active>a:hover,.mytab-ul>li.am-active>a,.mytab-ul>li.am-active>a:focus{
     color: #fff;
-    background-color: #2794e8;
+    background-color: #16518d;
     border-color: transparent;
 }
 .warning-tabs{
@@ -96,7 +96,7 @@ html,body{
     padding-top: 10px;
 }
 .revenue-tabs .li-con li div:last-child{
-    color: #2794e8;
+    color: #16518d;
 }
 .revenue-tabs .li-con p{
     margin-top: 10px;
@@ -111,7 +111,7 @@ html,body{
     padding-bottom: 19px;
 }
 .analyze-con .li-con li div:last-child{
-    color: #2794e8;
+    color: #16518d;
 }
 .toolbar .am-selected{
     width:100px;
@@ -170,11 +170,11 @@ html,body{
 }
 .cus-tabs .file-btn button{
     font-size: 14px;
-    background-color: #2794e8;
+    background-color: #16518d;
     color: #fff;
     height:30px;
     padding:0 10px;
-    border-color:#2794e8;
+    border-color:#16518d;
 }
 .btn-toolbar{
     border:solid 1px #ccc;

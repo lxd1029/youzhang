@@ -8,19 +8,19 @@ html,body{
     margin-top: 0;
     font-size: 14px;
     color: #fff;
-    border-bottom: solid 1px #2794e8;
+    border-bottom: solid 1px #16518d;
 }
 .mytab-ul>li>a,.mytab-ul>li>a:hover,.mytab-ul>li>a:hover{
     height: 30px;
     line-height: 16px;
-    color: #2794e8;
+    color: #16518d;
     background-color: #fff;
     border-color:transparent;
-    border-bottom-color: #2794e8 !important;
+    border-bottom-color: #16518d !important;
 }
 .mytab-ul>li.am-active>a,.mytab-ul>li.am-active>a:hover,.mytab-ul>li.am-active>a,.mytab-ul>li.am-active>a:focus{
     color: #fff;
-    background-color: #2794e8;
+    background-color: #16518d;
     border-color: transparent;
 }
 .warning-tabs{
@@ -57,14 +57,14 @@ html,body{
 .search-th button{
     font-size: 14px;
     color: #fff;
-    background-color: #2794e8;
+    background-color: #16518d;
     padding:2px;
 }
 .search-th .search-input{
     height: 22px;
     width:120px;
     font-size: 14px;
-    border-color: #2794e8;
+    border-color: #16518d;
     margin:0;
 }
 .bottom-bar{
